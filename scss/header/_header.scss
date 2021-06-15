@@ -1,0 +1,34 @@
+@import "components/drawer", "components/logo", "components/search",
+  "components/menu";
+
+.header {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+
+  // .container
+  &__container {
+    margin: auto;
+    width: 95%;
+    max-width: container 1200px;
+
+    &__top {
+      &--mobile {
+        display: none;
+        margin-bottom: 25px;
+
+        @include for-phone-only {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &--desktop {
+        @include for-phone-only {
+          display: none;
+        }
+      }
+    }
+
+  }
+}

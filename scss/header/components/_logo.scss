@@ -1,0 +1,15 @@
+.logo {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+
+    @include for-phone-only {
+      flex-grow: 1;
+    }
+
+    &__img {
+      height: 25px;
+      transform: translateY(10px);
+    }
+  
+  }

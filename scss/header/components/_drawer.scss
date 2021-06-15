@@ -1,0 +1,41 @@
+.drawer {
+    width: 24px;
+    height: 24px;
+    opacity: 54%;
+    display: block;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      background: url(../assets/menu.svg) no-repeat;
+      background-size: contain;
+    }
+
+   &__title {
+        text-transform: lowercase;
+        font-size: 0.5625rem;
+        font-weight: 400;
+        line-height: 0;
+
+        &:after {
+            content: "menu";
+        }
+    }
+
+    &--closed {
+      @extend .drawer;
+
+      .drawer__img {
+        background: url(../assets/close.svg) no-repeat;
+      }
+
+      .drawer__title:after {
+        content: "fechar";
+      }
+    }
+
+  }

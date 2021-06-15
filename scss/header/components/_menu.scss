@@ -1,0 +1,29 @@
+.header {
+  &__container {
+    &__menu {
+      @include for-phone-only {
+        display: none;
+      }
+
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &__link {
+          font-size: 0.8125rem;
+          font-weight: 600;
+          color: #000;
+          text-transform: uppercase;
+          padding-bottom: 5px;
+          vertical-align: baseline;
+
+          &:hover {
+            border-bottom: 2px solid #000;
+          }
+        }
+      }
+    }
+  }
+}
