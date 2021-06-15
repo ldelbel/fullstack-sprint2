@@ -1,9 +1,8 @@
-@import 'base/base','header/header';
+@import "base/base", "header/header";
 
 .hide {
   display: none;
 }
-
 
 .main {
   margin: 0 auto;
@@ -14,11 +13,9 @@
 
   // inicio breadcrumbs
   .breadcrumbs {
-
     margin-bottom: 16px;
 
     .list {
-
       display: flex;
 
       @include for-phone-only {
@@ -26,19 +23,18 @@
       }
 
       .item {
-
         font-size: 0.8125rem;
         font-weight: 600;
         color: #585858;
-  
+
         @include for-phone-only {
           display: none;
         }
-    
+
         &:not(:last-child):hover {
           text-decoration: underline;
         }
-  
+
         &--active {
           color: #261e1e;
           @include for-phone-only {
@@ -47,7 +43,6 @@
             font-size: 1.4375rem;
             font-weight: 400;
             text-transform: uppercase;
-  
           }
         }
       }
@@ -57,14 +52,11 @@
         margin-right: 8px;
         user-select: none;
       }
-
     }
-
   } // fim breadcrumbs
 
   // inicio filters
   .filters {
-
     border-top: 1px solid #e3e3e3;
     border-bottom: 1px solid #e3e3e3;
 
@@ -76,7 +68,6 @@
       display: flex;
 
       .item {
-
         display: flex;
         align-items: center;
         padding: 12px 14px;
@@ -85,29 +76,24 @@
           cursor: pointer;
           background-color: rgba(38, 30, 30, 0.04);
         }
-
       }
 
       .label {
         text-transform: uppercase;
         font-size: 0.6875rem;
         font-weight: 400;
-        color: #261e1e;;
+        color: #261e1e;
       }
 
       .img {
         height: 20px;
         margin-left: 8px;
       }
-
     }
-
   } // fim filters
-
 
   // inicio products
   .products {
-
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -122,23 +108,21 @@
       @include for-phone-only {
         flex-wrap: wrap;
       }
-
     }
 
     .cards {
-
       @include for-phone-only {
         flex-basis: 50%;
       }
 
       .card {
-
         cursor: pointer;
         border: 1px solid white;
         padding: 8px;
 
         &:hover {
-          box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+          box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+            0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
         }
 
         .img {
@@ -162,17 +146,12 @@
           text-transform: uppercase;
           text-align: center;
         }
-
       }
-
     }
-
   } // fim products
-
 }
 
 .footer {
-
   border-top: 2px solid lightgray;
 
   padding-top: 40px;
@@ -185,170 +164,160 @@
 
   // inicio contact
   .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  
-      .info {
-        height: 50px;
-        line-height: 50px;
-        text-transform: uppercase;
-        font-size: 0.8125rem;
+    .info {
+      height: 50px;
+      line-height: 50px;
+      text-transform: uppercase;
+      font-size: 0.8125rem;
+    }
+
+    .input {
+      height: 24px;
+      line-height: 24px;
+      border: 0px;
+      border-bottom: 1px solid rgba(38, 30, 30, 0.42);
+      outline: none;
+      width: 300px;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #000;
+
+      &:hover {
+        border-bottom: 2px solid #261e1e;
       }
 
-      .input {
-        height: 24px;
-        line-height: 24px;
-        border: 0px;
-        border-bottom: 1px solid rgba(38, 30, 30, 0.42);
-        outline: none;
-        width: 300px;
+      &:focus-within {
+        border-bottom: 2px solid #261e1e;
+      }
+
+      &::placeholder {
+        font-style: italic;
+        opacity: 42%;
+        font-weight: 600;
+      }
+    }
+
+    .btn {
+      margin-left: 20px;
+      box-shadow: none;
+      background-color: rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      border: none;
+      padding: 10px 20px 10px 20px;
+
+      .txt {
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    .apps {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .msg {
         font-size: 0.9375rem;
         font-weight: 600;
-        color: #000;
-        
-        &:hover {
-          border-bottom: 2px solid #261E1E;
-        }
-
-        &:focus-within {
-          border-bottom: 2px solid #261E1E;
-        }
-
-        &::placeholder {
-          font-style: italic;
-          opacity: 42%;
-          font-weight: 600;
-        }
+        text-transform: uppercase;
+        margin-right: 20px;
       }
 
-      .btn {
-        margin-left: 20px;
-        color: rgba(0, 0, 0, 0.26);
-        box-shadow: none;
-        background-color: rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        border: none;
-        padding: 10px 20px 10px 20px;
+      .app {
+        margin-left: 10px;
 
-        .txt {
-          font-size: 0.8125rem;
-          text-transform: uppercase;
+        .img {
+          width: 110px;
         }
       }
-
-      .apps {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .msg {
-          font-size: 0.9375rem;
-          font-weight: 600;
-          text-transform: uppercase;
-          margin-right: 20px;
-        }
-  
-        .app {
-
-          margin-left: 10px;
-
-          .img {
-            width: 110px;
-          }
-    
-        }
-
-      }
-
-    } // fim contact
+    }
+  } // fim contact
 
   // inicio links
   .links {
-      background-color: #f6f6f6;
-      margin-top: 40px;
+    background-color: #f6f6f6;
+    margin-top: 40px;
 
+    display: flex;
+
+    .contacts {
+      width: 30%;
       display: flex;
 
-      .contacts {
-        width: 30%;
+      .col {
+        flex-grow: 1;
         display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+      }
 
-        .col {
-          flex-grow: 1;
-          display: flex;
-          justify-content: space-around;
-          flex-direction: column;
+      .contact-icon {
+        text-align: center;
+        .img {
+          display: block;
+          margin: auto;
+          width: 25px;
         }
+        .text {
+          padding: 8px;
+          font-size: 0.8125rem;
+          white-space: pre-line;
+        }
+      }
+    }
 
-        .contact-icon {
-          text-align: center;
-          .img {
-            display:block;
-            margin:auto;
-            width: 25px;
+    .separator {
+      width: 1px;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .companies {
+      display: flex;
+      width: 60%;
+      padding: 50px;
+
+      .company-links {
+        flex-grow: 1;
+        margin-left: 8px;
+        margin-right: 8px;
+
+        .item {
+          padding-top: 8px;
+
+          .title {
+            text-transform: uppercase;
+            font-size: 0.875rem;
           }
+
           .text {
-            padding: 8px;
-            font-size: 0.8125rem;
-            white-space: pre-line;
+            line-height: 25px;
+            font-size: 0.6875rem;
+            font-weight: 400;
+            color: black;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
-
-      .separator {
-        width: 1px;
-        border: none;
-        background-color: rgba(0, 0, 0, 0.12);
-      }
-
-      .companies {
-        display: flex;
-        width: 60%;
-        padding: 50px;
-
-        .company-links {
-          flex-grow: 1;
-          margin-left: 8px;
-          margin-right: 8px;
-
-          .item {
-            padding-top: 8px;
-          
-            .title {
-              text-transform: uppercase;
-              font-size: 0.875rem;
-            }
-  
-            .text {
-              line-height: 25px;
-              font-size: 0.6875rem;
-              font-weight: 400;
-              color: black;
-  
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-
-          }
-
-        }
-      }
-    } // fim links
+    }
+  } // fim links
 
   // inicio payment
   .payment {
-
     margin-top: 25px;
     margin-bottom: 25px;
 
     display: flex;
 
     .alternatives {
-
       width: 50%;
 
       .title {
@@ -360,11 +329,9 @@
         margin: 2px;
         width: auto;
       }
-
     }
 
     .social {
-
       flex-grow: 1;
 
       .title {
@@ -389,11 +356,8 @@
             font-weight: 300;
             text-align: center;
           }
-
         }
-
       }
-
     }
 
     .accessibility {
@@ -407,13 +371,11 @@
       .img {
         width: 30px;
       }
-
     }
   } // fim payment
 
   // inicio bottom
   .bottom {
-
     background-color: #f6f6f6;
     padding: 20px 0;
 
@@ -423,20 +385,17 @@
 
     .copyright {
       width: 83.333333%;
-  
+
       .text {
         font-size: 0.5625rem;
         font-weight: 400;
-        color: #261E1E;
+        color: #261e1e;
       }
-
     }
 
     .stamp {
       margin: 0 auto;
       width: 47px;
     }
-
   } // fim bottom
-
 } // fim footer

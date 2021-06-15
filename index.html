@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riachuelo</title>
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -36,21 +33,30 @@
     <div class="header">
       <div class="header__container">
         <div class="header__container__top--mobile">
-          <button class="drawer" id="drawer" onclick="toggleMenu()">
+          <button
+            class="drawer"
+            id="drawer"
+            onclick="toggleMenu()"
+            aria-label="Abrir Menu"
+          >
             <div class="drawer__img"></div>
             <p class="drawer__title"></p>
           </button>
           <h1 class="logo">
-            <img class="logo__img" src="assets/rchlo.svg" />
+            <img class="logo__img" src="assets/rchlo.svg" alt="Riachuelo" />
           </h1>
         </div>
         <div class="header__container__top--desktop">
           <h1 class="logo">
-            <img class="logo__img" src="assets/riachuelo.svg" />
+            <img class="logo__img" src="assets/riachuelo.svg" alt="Riachuelo" />
           </h1>
         </div>
         <div class="header__container__search">
-          <img class="header__container__search__img" src="assets/search.svg" />
+          <img
+            class="header__container__search__img"
+            src="assets/search.svg"
+            alt
+          />
           <input
             class="header__container__search__input"
             type="search"
@@ -61,37 +67,59 @@
         <div class="header__container__menu">
           <ul class="header__container__menu__list">
             <li>
-              <a class="header__container__menu__list__link" href="">Novidades</a>
+              <a class="header__container__menu__list__link" href=""
+                >Novidades</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Feminino</a>
+              <a class="header__container__menu__list__link" href=""
+                >Feminino</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Masculino</a>
+              <a class="header__container__menu__list__link" href=""
+                >Masculino</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Infantil</a>
+              <a class="header__container__menu__list__link" href=""
+                >Infantil</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Moda Íntima</a>
+              <a class="header__container__menu__list__link" href=""
+                >Moda Íntima</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Calçados</a>
+              <a class="header__container__menu__list__link" href=""
+                >Calçados</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Acessórios e Relógios</a>
+              <a class="header__container__menu__list__link" href=""
+                >Acessórios e Relógios</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Beleza e Perfume</a>
+              <a class="header__container__menu__list__link" href=""
+                >Beleza e Perfume</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Casa Riachuelo</a>
+              <a class="header__container__menu__list__link" href=""
+                >Casa Riachuelo</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Eletrônicos</a>
+              <a class="header__container__menu__list__link" href=""
+                >Eletrônicos</a
+              >
             </li>
             <li>
-              <a class="header__container__menu__list__link" href="">Personagens</a>
+              <a class="header__container__menu__list__link" href=""
+                >Personagens</a
+              >
             </li>
             <li>
               <a class="header__container__menu__list__link" href="">Outlet</a>
@@ -128,23 +156,23 @@
         <ul class="list">
           <li class="item">
             <span class="label">Tamanho</span>
-            <img class="img" src="assets/filter.svg" />
+            <img class="img" src="assets/filter.svg" alt />
           </li>
           <li class="item">
             <span class="label">Cor</span>
-            <img class="img" src="assets/filter.svg" />
+            <img class="img" src="assets/filter.svg" alt />
           </li>
           <li class="item">
             <span class="label">Departamento</span>
-            <img class="img" src="assets/filter.svg" />
+            <img class="img" src="assets/filter.svg" alt />
           </li>
           <li class="item">
             <span class="label">Categoria</span>
-            <img class="img" src="assets/filter.svg" />
+            <img class="img" src="assets/filter.svg" alt />
           </li>
           <li class="item">
             <span class="label">Manga</span>
-            <img class="img" src="assets/filter.svg" />
+            <img class="img" src="assets/filter.svg" alt />
           </li>
         </ul>
       </div>
@@ -154,7 +182,7 @@
           <ol class="list">
             <li class="cards">
               <div class="card">
-                <img class="img" src="assets/c1.webp" />
+                <img class="img" src="assets/c1.webp" alt />
                 <p class="description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
@@ -164,7 +192,7 @@
             </li>
             <li class="cards">
               <div class="card">
-                <img class="img" src="assets/c2.webp" />
+                <img class="img" src="assets/c2.webp" alt />
                 <p class="description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
@@ -174,7 +202,7 @@
             </li>
             <li class="cards">
               <div class="card">
-                <img class="img" src="assets/c3.webp" />
+                <img class="img" src="assets/c3.webp" alt />
                 <p class="description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
@@ -184,51 +212,7 @@
             </li>
             <li class="cards">
               <div class="card">
-                <img class="img" src="assets/c4.webp" />
-                <p class="description">
-                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
-                  18
-                </p>
-                <p class="price">R$ 199,90</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-        <div class="row">
-          <ol class="list">
-            <li class="cards">
-              <div class="card">
-                <img class="img" src="assets/c5.webp" />
-                <p class="description">
-                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
-                  18
-                </p>
-                <p class="price">R$ 199,90</p>
-              </div>
-            </li>
-            <li class="cards">
-              <div class="card">
-                <img class="img" src="assets/c6.webp" />
-                <p class="description">
-                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
-                  18
-                </p>
-                <p class="price">R$ 199,90</p>
-              </div>
-            </li>
-            <li class="cards">
-              <div class="card">
-                <img class="img" src="assets/c7.webp" />
-                <p class="description">
-                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
-                  18
-                </p>
-                <p class="price">R$ 199,90</p>
-              </div>
-            </li>
-            <li class="cards">
-              <div class="card">
-                <img class="img" src="assets/c8.webp" />
+                <img class="img" src="assets/c4.webp" alt />
                 <p class="description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
@@ -242,7 +226,7 @@
           <ol class="list">
             <li class="cards">
               <div class="card">
-                <img class="img" src="assets/c9.webp" />
+                <img class="img" src="assets/c5.webp" alt />
                 <p class="description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
@@ -252,7 +236,7 @@
             </li>
             <li class="cards">
               <div class="card">
-                <img class="img" src="assets/c10.webp" />
+                <img class="img" src="assets/c6.webp" alt />
                 <p class="description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
@@ -262,7 +246,7 @@
             </li>
             <li class="cards">
               <div class="card">
-                <img class="img" src="assets/c11.webp" />
+                <img class="img" src="assets/c7.webp" alt />
                 <p class="description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
@@ -272,7 +256,51 @@
             </li>
             <li class="cards">
               <div class="card">
-                <img class="img" src="assets/c12.webp" />
+                <img class="img" src="assets/c8.webp" alt />
+                <p class="description">
+                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
+                  18
+                </p>
+                <p class="price">R$ 199,90</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="row">
+          <ol class="list">
+            <li class="cards">
+              <div class="card">
+                <img class="img" src="assets/c9.webp" alt />
+                <p class="description">
+                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
+                  18
+                </p>
+                <p class="price">R$ 199,90</p>
+              </div>
+            </li>
+            <li class="cards">
+              <div class="card">
+                <img class="img" src="assets/c10.webp" alt />
+                <p class="description">
+                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
+                  18
+                </p>
+                <p class="price">R$ 199,90</p>
+              </div>
+            </li>
+            <li class="cards">
+              <div class="card">
+                <img class="img" src="assets/c11.webp" alt />
+                <p class="description">
+                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
+                  18
+                </p>
+                <p class="price">R$ 199,90</p>
+              </div>
+            </li>
+            <li class="cards">
+              <div class="card">
+                <img class="img" src="assets/c12.webp" alt />
                 <p class="description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
@@ -293,17 +321,27 @@
             type="email"
             placeholder="Digite aqui seu e-mail"
           />
-          <button class="btn" type="submit">
+          <button class="btn" type="submit" aria-label="Cadastrar">
             <span class="txt">Cadastrar</span>
           </button>
         </form>
         <div class="apps">
           <p class="msg">Baixe nosso App</p>
           <a class="app" href="#">
-            <img class="img" src="assets/google-play.webp" />
+            <img
+              class="img"
+              src="assets/google-play.webp"
+              alt="Google Play"
+              lang="en"
+            />
           </a>
           <a class="app" href="#">
-            <img class="img" src="assets/app-store.webp" />
+            <img
+              class="img"
+              src="assets/app-store.webp"
+              alt="App Store"
+              lang="en"
+            />
           </a>
         </div>
       </div>
@@ -311,21 +349,21 @@
         <div class="container contacts">
           <div class="col">
             <a href="#" class="contact-icon">
-              <img class="img" src="assets/ico-attendance.svg" />
+              <img class="img" src="assets/ico-attendance.svg" alt />
               <p class="text">Atendimento</p>
             </a>
             <a href="#" class="contact-icon">
-              <img class="img" src="assets/ico-faq.svg" />
+              <img class="img" src="assets/ico-faq.svg" alt />
               <p class="text">Perguntas Frequentes</p>
             </a>
           </div>
           <div class="col">
             <a href="#" class="contact-icon">
-              <img class="img" src="assets/ico-invoice-and-statement.svg" />
+              <img class="img" src="assets/ico-invoice-and-statement.svg" alt />
               <p class="text">Fatura e Extrato</p>
             </a>
             <a href="#" class="contact-icon">
-              <img class="img" src="assets/ico-work-with-us.svg" />
+              <img class="img" src="assets/ico-work-with-us.svg" alt />
               <p class="text">Trabalhe Conosco</p>
             </a>
           </div>
@@ -435,65 +473,116 @@
       <div class="container payment">
         <div class="alternatives">
           <h1 class="title">Formas de Pagamento</h1>
-          <img class="img" src="assets/ico-cartao-rchlo1.webp" />
-          <img class="img" src="assets/ico-cartao-rchlo2.webp" />
-          <img class="img" src="assets/ico-cartao-rchlo3.webp" />
-          <img class="img" src="assets/ico-cartao-visa.png" />
-          <img class="img" src="assets/ico-cartao-master.webp" />
-          <img class="img" src="assets/ico-cartao-amex.webp" />
-          <img class="img" src="assets/ico-cartao-diners.png" />
-          <img class="img" src="assets/ico-cartao-elo.png" />
-          <img class="img" src="assets/ico-boleto.webp" />
-          <img class="img" src="assets/ico-paypal.png" />
+          <img
+            class="img"
+            src="assets/ico-cartao-rchlo1.webp"
+            alt="Cartão de Loja Riachuelo"
+          />
+          <img
+            class="img"
+            src="assets/ico-cartao-rchlo2.webp"
+            alt="Cartão Riachuelo Master Card"
+          />
+          <img
+            class="img"
+            src="assets/ico-cartao-rchlo3.webp"
+            alt="Cartão Riachuelo Visa"
+          />
+          <img
+            class="img"
+            src="assets/ico-cartao-visa.png"
+            alt="Bandeira Visa"
+          />
+          <img
+            class="img"
+            src="assets/ico-cartao-master.webp"
+            alt="Bandeira Master Card"
+          />
+          <img
+            class="img"
+            src="assets/ico-cartao-amex.webp"
+            alt="Bandeira American Express"
+          />
+          <img
+            class="img"
+            src="assets/ico-cartao-diners.png"
+            alt="Bandeira Diners"
+          />
+          <img class="img" src="assets/ico-cartao-elo.png" alt="Bandeira Elo" />
+          <img class="img" src="assets/ico-boleto.webp" alt="Boleto" />
+          <img class="img" src="assets/ico-paypal.png" alt="PayPal" lang="en" />
         </div>
         <div class="social">
           <h1 class="title">Siga a Riachuelo</h1>
           <div class="icons">
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-facebook.svg" />
+                <img class="img" src="assets/ico-facebook.svg" alt="facebook" />
               </a>
             </div>
 
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-instagram.svg" />
+                <img
+                  class="img"
+                  src="assets/ico-instagram.svg"
+                  alt="instagram"
+                />
               </a>
               <p class="text">RCHLO</p>
             </div>
 
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-instagram.svg" />
+                <img
+                  class="img"
+                  src="assets/ico-instagram.svg"
+                  alt="instagram da casa riachuelo"
+                />
               </a>
               <p class="text">CASA RCHLO</p>
             </div>
 
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-pinterest.svg" />
+                <img
+                  class="img"
+                  src="assets/ico-pinterest.svg"
+                  alt="pinterest"
+                  lang="en"
+                />
               </a>
             </div>
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-twitter.svg" />
+                <img
+                  class="img"
+                  src="assets/ico-twitter.svg"
+                  alt="twitter"
+                  lang="en"
+                />
               </a>
             </div>
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-youtube.svg" />
+                <img
+                  class="img"
+                  src="assets/ico-youtube.svg"
+                  alt="youtube"
+                  lang="en"
+                />
               </a>
             </div>
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-linkedin.svg" />
+                <img class="img" src="assets/ico-linkedin.svg" alt="linkedin" />
               </a>
             </div>
           </div>
         </div>
         <div class="accessibility">
           <h1 class="title">Acessibilidade</h1>
-          <img class="img" src="assets/ico-a11y.webp" />
+          <img class="img" src="assets/ico-a11y.webp" alt="NVDA" />
         </div>
       </div>
       <div class="bottom">
@@ -526,7 +615,7 @@
             </p>
           </div>
           <div class="stamp">
-            <img class="img" src="assets/ra1000.webp" />
+            <img class="img" src="assets/ra1000.webp" alt />
           </div>
         </div>
       </div>

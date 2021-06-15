@@ -434,10 +434,10 @@ html input {
   color: #000;
 }
 .footer .contact .input:hover {
-  border-bottom: 2px solid #261E1E;
+  border-bottom: 2px solid #261e1e;
 }
 .footer .contact .input:focus-within {
-  border-bottom: 2px solid #261E1E;
+  border-bottom: 2px solid #261e1e;
 }
 .footer .contact .input::placeholder {
   font-style: italic;
@@ -446,7 +446,6 @@ html input {
 }
 .footer .contact .btn {
   margin-left: 20px;
-  color: rgba(0, 0, 0, 0.26);
   box-shadow: none;
   background-color: rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -456,6 +455,7 @@ html input {
 .footer .contact .btn .txt {
   font-size: 0.8125rem;
   text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
 }
 .footer .contact .apps {
   display: flex;
@@ -595,7 +595,7 @@ html input {
 .footer .bottom .copyright .text {
   font-size: 0.5625rem;
   font-weight: 400;
-  color: #261E1E;
+  color: #261e1e;
 }
 .footer .bottom .stamp {
   margin: 0 auto;
