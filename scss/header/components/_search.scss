@@ -15,6 +15,12 @@
         line-height: 40px;
       }
 
+      &__label {
+        position: absolute;
+        height: 0;
+        font-size: 0;
+      }
+
       &__input {
         height: 40px;
         width: 100%;

@@ -205,6 +205,11 @@ html input {
   color: rgba(0, 0, 0, 0.26);
   line-height: 40px;
 }
+.header__container__search__label {
+  position: absolute;
+  height: 0;
+  font-size: 0;
+}
 .header__container__search__input {
   height: 40px;
   width: 100%;
